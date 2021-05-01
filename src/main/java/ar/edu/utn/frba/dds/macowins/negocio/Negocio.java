@@ -11,8 +11,14 @@ import java.util.List;
 public class Negocio {
     List<Venta> ventas = new ArrayList<>();
 
-    public double gananciasEnUnDia(Fecha fecha){
-        return ventas.stream().filter(venta -> venta.getFecha() == fecha).mapToDouble(venta -> venta.precio()).sum();
+    public double gananciasEnUnDia(int dia, int mes, int anio){
+        return ventas.stream().filter(venta -> fechasIguales(dia,mes,anio,venta.getFecha())).mapToDouble(venta -> venta.precio()).sum();
+    }
+
+    public boolean fechasIguales(int dia, int mes, int anio,Fecha fecha){
+
+        return dia == fecha.getDia() && mes == fecha.getMes() && anio == fecha.getAnio();
+
     }
 
     public void ingresarVenta(Venta venta){

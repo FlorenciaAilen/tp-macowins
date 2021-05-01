@@ -20,13 +20,13 @@ public class NegocioTest {
         Prenda sacoEnLiquidacion = new Prenda(3000, new Liquidacion(), SACO);
         Prenda camisaNueva = new Prenda(4000,new Nueva(),CAMISA);
 
-        Venta venta1 = new Venta(new Fecha(10, 05, 2021));
+        Venta venta1 = new Venta(new Fecha(10, 5, 2021));
         venta1.vender(pantalonEnPromocion, 1);
 
-        Venta venta2 = new Venta(new Fecha(10, 05, 2021));
+        Venta venta2 = new Venta(new Fecha(10, 5, 2021));
         venta2.vender(sacoEnLiquidacion, 2);
 
-        Venta venta3 = new Venta(new Fecha(11, 05, 2021));
+        Venta venta3 = new Venta(new Fecha(11, 5, 2021));
         venta3.vender(camisaNueva, 2);
 
         Negocio macowins = new Negocio();
@@ -34,8 +34,8 @@ public class NegocioTest {
         macowins.ingresarVenta(venta2);
         macowins.ingresarVenta(venta3);
 
-        Fecha fechaDeHoy = new Fecha(10, 05, 2021);
+        Fecha fechaDeHoy = new Fecha(10, 5, 2021);
 
-        assertEquals(macowins.gananciasEnUnDia(fechaDeHoy), 4300, 0);
+        assertEquals(macowins.gananciasEnUnDia(10,5,2021), 4300, 0);
     }
 }
