@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Negocio {
-    List<Venta> ventas = new ArrayList<>();
+    public List<Venta> ventas = new ArrayList<>();
 
     public double gananciasEnUnDia(int dia, int mes, int anio){
         return ventas.stream().filter(venta -> fechasIguales(dia,mes,anio,venta.getFecha())).mapToDouble(venta -> venta.precio()).sum();

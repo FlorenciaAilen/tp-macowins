@@ -1,7 +1,7 @@
 package ar.edu.utn.frba.dds.macowins.prenda;
 
 public class Promocion implements Estado {
-    int descuento;
+    public int descuento;
 
     public Promocion(int descuento) {
         this.descuento = descuento;

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Venta {
-    Fecha fecha;
+    public Fecha fecha;
     public List<Item> items = new ArrayList<>();
 
     public Venta(Fecha fecha){

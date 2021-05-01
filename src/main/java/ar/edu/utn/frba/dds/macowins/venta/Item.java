@@ -3,10 +3,10 @@ package ar.edu.utn.frba.dds.macowins.venta;
 import ar.edu.utn.frba.dds.macowins.prenda.Prenda;
 
 public class Item{
-    Prenda prenda;
-    int cantidad;
+    public Prenda prenda;
+    public int cantidad;
 
-    Item(Prenda prenda, int cantidad){
+    public Item(Prenda prenda, int cantidad){
         this.prenda = prenda;
         this.cantidad = cantidad;
     }

@@ -1,9 +1,9 @@
 package ar.edu.utn.frba.dds.macowins.prenda;
 
 public class Prenda {
-    double precioPropio;
-    Estado estado;
-    TipoPrenda tipoPrenda;
+    public double precioPropio;
+    public Estado estado;
+    public TipoPrenda tipoPrenda;
 
     public Prenda(double precioPropio, Estado estado, TipoPrenda tipoPrenda){
         this.precioPropio = precioPropio;
